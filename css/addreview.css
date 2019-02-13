@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    height:100vh;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#EC407A;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight:bold;
+    margin-right:25px;
+  }
+  
+  i{
+      color:white!important;
+  }
+
+  .fa-user-circle{
+    margin-right: 6px;
+  }
+
+  .name{
+      float:left;
+      margin-left: 40px;
+  }
+
+  .header{
+      height:20px;
+  }
+
+  .fa-bars{
+    float: left;
+    margin-top: 14px;
+    margin-left: 25px;
+
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 0;
+    background-color:#FCE4EC;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    transition: 0.3s;
+    color:#EC407A;
+  }
+  
+  .sidenav a:hover {
+    opacity:0.5;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  ul button{
+      border:none;
+  }
+
+  .hambug{
+      float:left;
+      background-color:#EC407A ;
+      font-size: 18px;
+  }
+
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #EC407A;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    opacity:0.7;
+  }
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ 
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

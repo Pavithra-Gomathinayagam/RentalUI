@@ -1,0 +1,323 @@
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EC407A;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+i {
+    color: white !important;
+}
+
+.fa-user-circle {
+    margin-right: 6px;
+}
+
+.name {
+    float: left;
+    margin-left: 40px;
+}
+
+.header {
+    height: 20px;
+}
+
+.fa-bars {
+    float: left;
+    margin-top: 14px;
+    margin-left: 25px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 0;
+    background-color: #FCE4EC;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    transition: 0.3s;
+    color: #EC407A;
+}
+
+.sidenav a:hover {
+    opacity:0.5;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+ul button {
+    border: none;
+}
+
+.hambug {
+    float: left;
+    background-color: #EC407A;
+    font-size: 18px;
+}
+
+input.invalid,
+select.invalid {
+    background-color: #E1BEE7;
+}
+
+.tab {
+    display: none;
+}
+
+.signup {
+    margin-top: 40px;
+    margin-left: 230px;
+    width: 50%;
+}
+
+input[type=text],
+input[type=number],
+.facility {
+    margin: 10px 15px 0px 60px;
+    width: 400px;
+    padding: 10px;
+    resize: vertical;
+}
+
+select {
+    margin: 10px 15px 0px 60px;
+    width: 422px;
+    padding: 10px;
+    resize: vertical;
+    background-color: transparent;
+}
+
+label {
+    margin: 0px 15px 0px 60px;
+    padding: 12px 12px 12px 0;
+    display: block;
+    font-size: 15px;
+}
+
+.heading {
+    margin: 0px 15px 0px 60px;
+    padding: 12px 12px 12px 0;
+    font-size: 18px;
+}
+
+.dropdwncolor {
+    color: #E0E0E0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#nextBtn {
+    width: 0%;
+    background-color: #EC407A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 73px 10px 27px;
+    margin: 20px 39px 0px 0px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#prevBtn {
+    width: 38%;
+    background-color: #F48FB1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 13px 0px 11px 0px;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #7B1FA2;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: Violet;
+}
+
+@media (min-width:800px) and (max-width: 1068px) {
+    input[type=text],
+    input[type=number],
+    .facility {
+        width: 350px;
+    }
+    select {
+        width: 372px;
+    }
+    .signup {
+        width: 50%;
+    }
+    #nextBtn {
+        margin: 20px 39px 0px 0px;
+    }
+}
+
+@media (min-width:650px) and (max-width: 799px) {
+    input[type=text],
+    input[type=number],
+    .facility {
+        width: 300px;
+    }
+    select {
+        width: 322px;
+    }
+    .signup {
+        margin-left: 150px;
+        width: 65%;
+    }
+}
+
+@media (min-width:531px) and (max-width: 649px) {
+    input[type=text],
+    input[type=number],
+    .facility {
+        width: 300px;
+    }
+    select {
+        width: 322px;
+    }
+    .signup {
+        margin-left: 100px;
+        width: 65%;
+    }
+    .heading {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:400px) and (max-width: 530px) {
+    input[type=text],
+    input[type=number],
+    .facility {
+        width: 250px;
+    }
+    select {
+        width: 272px;
+    }
+    .heading {
+        font-size: 14px;
+    }
+    .signup {
+        margin-left: 30px;
+        width: 70%;
+    }
+    .sidenav {
+        padding-top: 15px;
+        width: 200px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .name {
+        margin-left: 0px;
+    }
+    li {
+        float: right;
+        margin-right: -30px;
+    }
+    .sidenav .closebtn {
+        font-size: 22px;
+    }
+    .fa-bars {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 399px) {
+    input[type=text],
+    input[type=number],
+    .facility {
+        width: 200px;
+    }
+    select {
+        width: 222px;
+    }
+    .heading {
+        font-size: 14px;
+    }
+    .signup {
+        margin-left: 10px;
+        width: 90%;
+    }
+    .sidenav {
+        padding-top: 15px;
+        width: 195px;
+        margin-top: -1px;
+    }
+    .sidenav a {
+        font-size: 16px;
+    }
+    .name {
+        margin-left: -16px;
+    }
+    li {
+        float: right;
+        font-size: 14px;
+        margin-right: -37px;
+    }
+    .sidenav .closebtn {
+        font-size: 24px;
+    }
+    .fa-bars {
+        margin-left: 5px;
+    }
+}

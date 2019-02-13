@@ -1,0 +1,240 @@
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EC407A;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+i {
+    color: white !important;
+}
+
+.fa-user-circle {
+    margin-right: 6px;
+}
+.name {
+    float: left;
+    margin-left: 40px;
+}
+.home{
+    float: left;
+    margin-left: 0px;
+    font-size:16px;
+}
+.header {
+    height: 20px;
+}
+
+.fa-bars {
+    float: left;
+    margin-top: 14px;
+    margin-left: 25px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 0;
+    background-color: #FCE4EC;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    transition: 0.3s;
+    color: #EC407A;
+}
+
+.sidenav a:hover {
+    opacity:0.5;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+ul button {
+    border: none;
+}
+
+.hambug {
+    float: left;
+    background-color: #EC407A;
+    font-size: 18px;
+}
+
+.cardContainer {
+    margin-top: 40px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.rowOne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardFirst,
+.cardTwo,
+.cardThree,
+.cardFour,
+.cardFive,
+.cardSix,
+.cardSeven,
+.cardEight {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+}
+
+.cardFirst button:hover {
+    opacity: 0.7;
+}
+
+.fname,
+.email,
+.phoneno,
+.occupation,
+.address,
+.area,
+.zipcode,
+.reqamt {
+    text-align: left;
+    padding-left: 20px;
+    margin-block-end: -4px;
+}
+
+.cardContainer button {
+    border: 1px solid #9E9E9E;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    float: left;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width:860px) and (max-width:1068px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(25% - 1em);
+    }
+}
+
+@media (min-width:531px) and (max-width:859px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(50% - 1em);
+    }
+}
+
+@media (min-width:400px) and (max-width: 530px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(100% - 1em);
+    }
+    .name {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 399px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(100% - 1em);
+    }
+    .sidenav {
+        padding-top: 15px;
+        width: 195px;
+        margin-top: -1px;
+    }
+    .sidenav a {
+        font-size: 16px;
+    }
+    .name {
+        margin-left: -16px;
+    }
+    li {
+        float: right;
+        font-size: 14px;
+        margin-right: -37px;
+    }
+    .sidenav .closebtn {
+        font-size: 24px;
+    }
+    .fa-bars {
+        margin-left: 5px;
+    }
+}

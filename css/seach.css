@@ -1,0 +1,507 @@
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EC407A;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+i {
+    color: white !important;
+}
+
+.fa-user-circle {
+    margin-right: 6px;
+}
+
+/* li a:hover:not(.active) {
+    background-color: #111;
+  } */
+
+.name {
+    float: left;
+    margin-left: 40px;
+}
+
+.header {
+    height: 20px;
+}
+
+.fa-bars {
+    float: left;
+    margin-top: 14px;
+    margin-left: 25px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 0;
+    background-color: #FCE4EC;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    transition: 0.3s;
+    color: #EC407A;
+}
+
+.sidenav a:hover {
+    opacity:0.5;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+ul button {
+    border: none;
+}
+
+.hambug {
+    float: left;
+    background-color: #EC407A;
+    font-size: 18px;
+}
+
+.cardContainer {
+    margin-top: 40px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.rowOne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardFirst,
+.cardTwo,
+.cardThree,
+.cardFour,
+.cardFive,
+.cardSix,
+.cardSeven,
+.cardEight {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    /* margin: auto; */
+    font-family: arial;
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+}
+
+.address,
+.area,
+.zipcode {
+    text-align: left;
+    padding-left: 20px;
+    margin-block-end: -4px;
+}
+
+.houseType,
+.price {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.cardContainer button:hover {
+    opacity: 0.7;
+}
+
+div .row {
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 380px;
+}
+
+.searchbr {
+    float: left;
+    position: relative;
+    padding-left: 100px;
+}
+
+div input[type=text] {
+    width: 400px;
+    height: 35px;
+    font-size: 17px;
+    padding-left: 14px;
+    border-left: 1px solid #EC407A;
+    border-top: 1px solid #EC407A;
+    border-bottom: 1px solid #EC407A;
+}
+
+select {
+    width: 100px;
+    height: 37px;
+    background-color: #F5F5F5;
+    color: #212121;
+    border: none;
+    padding: 5px;
+}
+
+.selectopt {
+    font-size: 15px;
+    color: #616161;
+}
+
+.dropdwn {
+    position: absolute;
+    border-left: 1px solid #EC407A;
+    border-top: 1px solid #EC407A;
+    border-bottom: 1px solid #EC407A;
+}
+
+.btn {
+    width: 100px;
+    height: 39px;
+    background-color: #EC407A;
+    color: white;
+    border: none;
+}
+
+div .address {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cardContainer button {
+    border: 1px solid #9E9E9E;
+    outline: 0;
+    padding: 12px;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    float: left;
+}
+
+.markButton button {
+    border: 1px solid #9E9E9E;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+    float: right;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.modalDialog {
+    /* position: fixed; */
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.facility,
+.reviewRating {
+    margin-block-end: 0em;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container>div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.modalContent {
+    display: inline-block;
+    width: 100%;
+}
+
+.modalLeft {
+    width: 50%;
+    float: left;
+}
+
+.modalRight {
+    width: 50%;
+    float: right;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    display: block;
+}
+
+.modalDialog>div {
+    width: 50%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    z-index: 0;
+
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    z-index: 1;
+}
+
+.close:hover {
+    background: #EC407A;
+}
+
+@media (min-width:850px) and (max-width:1068px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(25% - 1em);
+    }
+    div input[type=text] {
+        width: 300px;
+        font-size: 15px;
+    }
+    div .row {
+        margin-top: 80px;
+        margin-left: 255px;
+    }
+}
+
+@media (min-width:655px) and (max-width:849px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(50% - 1em);
+    }
+    div input[type=text] {
+        width: 200px;
+        font-size: 13px;
+    }
+    div .row {
+        margin-top: 80px;
+        margin-left: 130px;
+    }
+}
+
+@media (min-width:531px) and (max-width:654px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(50% - 1em);
+    }
+    div input[type=text] {
+        width: 150px;
+        font-size: 12px;
+    }
+    div .row {
+        margin-top: 80px;
+        margin-left: 88px;
+    }
+    .modalDialog>div {
+        width: 75%;
+    }
+}
+
+@media (min-width:400px) and (max-width: 530px) {
+    .sidenav {
+        padding-top: 15px;
+        width: 200px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .name {
+        margin-left: 0px;
+    }
+    li {
+        float: right;
+        margin-right: -30px;
+    }
+    .sidenav .closebtn {
+        font-size: 22px;
+    }
+    .fa-bars {
+        margin-left: 5px;
+    }
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(100% - 1em);
+    }
+    div .address {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    div input[type=text] {
+        width: 150px;
+        /* height:35px; */
+        font-size: 12px;
+        /* padding-left:14px; */
+    }
+    div .row {
+        margin-top: 80px;
+        margin-left: 15px;
+    }
+    .modalDialog>div {
+        width: 85%;
+    }
+}
+
+@media (max-width: 399px) {
+    .sidenav {
+        padding-top: 15px;
+        width: 195px;
+        margin-top: -1px;
+    }
+    .sidenav a {
+        font-size: 16px;
+    }
+    .name {
+        margin-left: -16px;
+    }
+    li {
+        float: right;
+        font-size: 14px;
+        margin-right: -37px;
+    }
+    .sidenav .closebtn {
+        font-size: 24px;
+    }
+    .fa-bars {
+        margin-left: 5px;
+    }
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(100% - 1em);
+    }
+    .cardContainer {
+        margin-top: 45px;
+    }
+    .btn {
+        width: 70px;
+    }
+    select {
+        width: 70px;
+    }
+    div input[type=text] {
+        width: 120px;
+        font-size: 12px;
+    }
+    div .row {
+        margin-top: 62px;
+        margin-left: 10px;
+    }
+    .searchbr {
+        padding-left: 69px;
+    }
+    .modalDialog>div {
+        width: 85%;
+    }
+}

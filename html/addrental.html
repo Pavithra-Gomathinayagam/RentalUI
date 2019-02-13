@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/addrental.css">
+    <title>Add rental</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../html/search.html">Search</a>
+                <a href="../html/review.html">Add reviews and ratings</a>
+                <a href="../html/track.html">Track status</a>
+                <a href="../html/confirm.html">View Accepted house</a>
+                <a href="../html/addrental.html">List your property</a>
+                <a href="../html/view.html">View Property details</a>
+            </div>
+            <ul>
+                <button onclick="openNav()" class="hambug"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <li class="name"><a href="#">NO BROKER</a></li>
+                <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Sign Out</a></li>
+
+            </ul>
+        </div>
+        <form id="sign" action="view.html">
+            <div class="signup">
+                <h3 class="heading">LIST YOUR PROPERTY</h3>
+                <div class="tab">
+                    <label for="address"><b>ADDRESS</b></label>
+                    <input type="text" placeholder="Enter Address" name="address" id="address" required>
+
+                    <label for="zipcode"><b>ZIPCODE</b></label>
+                    <input type="number" placeholder="Enter Zipcode" name="zipcode" id="zipcode" required>
+
+                    <label for="houseType"><b>HOUSE TYPE</b></label>
+                    <div class="dropdwnType">
+                        <select>
+                            <option value="" selected disabled hidden class="dropdwncolor">Select house type</option>
+                            <option class="selectopt">1BHK</option>
+                            <option class="selectopt">2BHK</option>
+                            <option class="selectopt">3BHK</option>
+                            <option class="selectopt">4+BHK</option>
+                            <option class="selectopt">1RK</option>
+                        </select>
+                    </div>
+
+                    <label for="landmark"><b>LANDMARK</b></label>
+                    <input type="text" placeholder="Enter Landmark" name="landmark" id="landmark" required>
+
+                    <label for="rentPg"><b>I WANT TO</b></label>
+                    <div>
+                        <select id="dropdwnPg">
+                            <option value="" selected disabled hidden>Choose rental option</option>
+                            <option class="selectopt">RENT</option>
+                            <option class="selectopt">RENT OUT PG</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tab">
+                    <label for="sqFeet"><b>BUILT-UP AREA</b></label>
+                    <input type="text" placeholder="Enter built-up area.." name="builtup" id="builtup" required>
+
+                    <label for="rentAmount"><b>RENT AMOUNT</b></label>
+                    <input type="number" placeholder="Enter rent amount.." name="rentamt" id="rentamt" required>
+
+                    <label for="deposit"><b>DEPOSIT</b></label>
+                    <input type="number" placeholder="Enter deposit.." name="deposit" id="deposit" required>
+
+                    <label for="totalFloors"><b>TOTAL FLOORS</b></label>
+                    <div class="dropdwnFloor">
+                        <select>
+                            <option value="" selected disabled hidden>Select Total Floors</option>
+                            <option class="selectopt">1</option>
+                            <option class="selectopt">2</option>
+                            <option class="selectopt">3</option>
+                            <option class="selectopt">4</option>
+                            <option class="selectopt">5</option>
+                            <option class="selectopt">6</option>
+                            <option class="selectopt">7</option>
+                            <option class="selectopt">8</option>
+                            <option class="selectopt">9</option>
+                            <option class="selectopt">10</option>
+                            <option class="selectopt">11</option>
+                            <option class="selectopt">12</option>
+                            <option class="selectopt">13</option>
+                            <option class="selectopt">14</option>
+                            <option class="selectopt">15</option>
+                            <option class="selectopt">16</option>
+                            <option class="selectopt">17</option>
+                            <option class="selectopt">18</option>
+                            <option class="selectopt">19</option>
+                            <option class="selectopt">20</option>
+                        </select>
+                    </div>
+
+                    <label for="floorNo"><b>FLOOR NUMBER</b></label>
+                    <div class="dropdwnFloorNo">
+                        <select>
+                            <option value="" selected disabled hidden>Select Floor Number</option>
+                            <option class="selectopt">1</option>
+                            <option class="selectopt">2</option>
+                            <option class="selectopt">3</option>
+                            <option class="selectopt">4</option>
+                            <option class="selectopt">5</option>
+                            <option class="selectopt">6</option>
+                            <option class="selectopt">7</option>
+                            <option class="selectopt">8</option>
+                            <option class="selectopt">9</option>
+                            <option class="selectopt">10</option>
+                            <option class="selectopt">11</option>
+                            <option class="selectopt">12</option>
+                            <option class="selectopt">13</option>
+                            <option class="selectopt">14</option>
+                            <option class="selectopt">15</option>
+                            <option class="selectopt">16</option>
+                            <option class="selectopt">17</option>
+                            <option class="selectopt">18</option>
+                            <option class="selectopt">19</option>
+                            <option class="selectopt">20</option>
+                        </select>
+                    </div>
+
+                    <label for="facility"><b>FACILITY</b></label>
+                    <div class="facility">
+                        <input type="checkbox" name="facility1" value="ac"> AC<br>
+                        <input type="checkbox" name="facility2" value="car parking"> Car parking<br>
+                        <input type="checkbox" name="facility3" value="cctv" checked> CCTV<br>
+                        <input type="checkbox" name="facility4" value="car parking"> Security<br>
+                    </div>
+
+                </div>
+
+                <div class="tab">
+                    <label for="PgSharing"><b>PG SHARING</b></label>
+                    <div class="dropdwnSharing">
+                        <select>
+                            <option value="" selected disabled hidden>Select PG sharing</option>
+                            <option class="selectopt">Double sharing</option>
+                            <option class="selectopt">Triple sharing</option>
+                            <option class="selectopt">Four sharing</option>
+                        </select>
+                    </div>
+
+                    <label for="PgGender"><b>PG GENDER</b></label>
+                    <div class="dropdwnGender">
+                        <select>
+                            <option value="" selected disabled hidden>Select PG gender</option>
+                            <option class="selectopt">Male</option>
+                            <option class="selectopt">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- <button type="button" onclick="register()">REGISTER</button> -->
+                <div style="overflow:auto;">
+                    <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    </div>
+                </div>
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../js/addrental.js"></script>
+
+</html>

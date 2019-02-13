@@ -1,0 +1,158 @@
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EC407A;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+i {
+    color: white !important;
+}
+
+.fa-user-circle,
+.fa-pencil-square-o {
+    margin-right: 6px;
+}
+
+.name {
+    float: left;
+    margin-left: 40px;
+}
+
+.header {
+    height: 20px;
+}
+
+.cardContainer {
+    margin-top: 40px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.rowOne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardFirst,
+.cardTwo,
+.cardThree,
+.cardFour,
+.cardFive,
+.cardSix,
+.cardSeven,
+.cardEight {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+}
+
+.cardContainer button {
+    border: 1px solid #9E9E9E;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+    float: left;
+}
+
+.cardContainer .accept{
+    background-color: #EC407A;
+}
+
+.cardContainer .reject{
+    background-color: black;
+}
+
+.cardContainer button:hover {
+    opacity: 0.7;
+}
+
+@media (min-width:860px) and (max-width:1068px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(25% - 1em);
+    }
+}
+
+@media (min-width:531px) and (max-width:859px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(50% - 1em);
+    }
+}
+
+@media (min-width:400px) and (max-width: 530px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(100% - 1em);
+    }
+}
+
+@media (max-width: 399px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(100% - 1em);
+    }
+    .name {
+        margin-left: 5px;
+    }
+    li a {
+        margin-right: 5px
+    }
+}

@@ -1,0 +1,380 @@
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EC407A;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+i {
+    color: white !important;
+}
+
+.fa-user-circle {
+    margin-right: 6px;
+}
+
+.name {
+    float: left;
+    margin-left: 40px;
+}
+
+.header {
+    height: 20px;
+}
+
+.fa-bars {
+    float: left;
+    margin-top: 14px;
+    margin-left: 25px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 0;
+    background-color: #FCE4EC;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    transition: 0.3s;
+    color: #EC407A;
+}
+
+.sidenav a:hover {
+    opacity:0.5;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+ul button {
+    border: none;
+}
+
+.hambug {
+    float: left;
+    background-color: #EC407A;
+    font-size: 18px;
+}
+
+#homeSearchBg {
+    height: 400px;
+    margin-top: 46px;
+    background: url(https://cdn.staticmb.com/images/heroShot13102017.jpg?v=7) no-repeat scroll center center / cover;
+}
+
+.homeSearchBg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.cardContainer {
+    margin-top: 470px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.rowOne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardFirst,
+.cardTwo,
+.cardThree,
+.cardFour,
+.cardFive,
+.cardSix,
+.cardSeven,
+.cardEight {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+}
+
+.address,
+.area,
+.zipcode {
+    text-align: left;
+    padding-left: 20px;
+    margin-block-end: -4px;
+}
+
+.houseType,
+.price,
+.Landmark {
+    padding-left: 20px;
+    text-align: left;
+}
+
+div .address {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price {
+    color: grey;
+    font-size: 18px;
+}
+
+.cardFirst button:hover {
+    opacity: 0.7;
+}
+
+div .row {
+    display: inline-block;
+    margin-top: 170px;
+    margin-left: 380px;
+}
+
+.searchbr {
+    float: left;
+    position: relative;
+    padding-left: 100px;
+}
+
+div input[type=text] {
+    width: 400px;
+    height: 35px;
+    font-size: 17px;
+    padding-left: 14px;
+}
+
+select {
+    width: 100px;
+    height: 41px;
+    background-color: #F5F5F5;
+    color: #212121;
+    border: none;
+    padding: 5px;
+}
+
+.selectopt {
+    font-size: 15px;
+    color: #616161;
+}
+
+.dropdwn {
+    position: absolute;
+}
+
+.btn {
+    width: 100px;
+    height: 41px;
+    background-color: #EC407A;
+    color: white;
+    border: none;
+}
+
+@media (min-width:850px) and (max-width:1068px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(25% - 1em);
+    }
+    div input[type=text] {
+        width: 300px;
+        font-size: 15px;
+    }
+    div .row {
+        margin-top: 170px;
+        margin-left: 255px;
+    }
+}
+
+@media (min-width:655px) and (max-width:849px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(50% - 1em);
+    }
+    div input[type=text] {
+        width: 200px;
+        font-size: 13px;
+    }
+    div .row {
+        margin-top: 170px;
+        margin-left: 130px;
+    }
+}
+
+@media (min-width:531px) and (max-width:654px) {
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(50% - 1em);
+    }
+    div input[type=text] {
+        width: 150px;
+        font-size: 12px;
+    }
+    div .row {
+        margin-top: 170px;
+        margin-left: 88px;
+    }
+}
+
+@media (min-width:400px) and (max-width: 530px) {
+    .sidenav {
+        padding-top: 15px;
+        width: 200px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .name {
+        margin-left: 0px;
+    }
+    li {
+        float: right;
+        margin-right: -30px;
+    }
+    .sidenav .closebtn {
+        font-size: 22px;
+    }
+    .fa-bars {
+        margin-left: 5px;
+    }
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(100% - 1em);
+    }
+    div .address {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    div input[type=text] {
+        width: 150px;
+        font-size: 12px;
+    }
+    div .row {
+        margin-top: 170px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 399px) {
+    .sidenav {
+        padding-top: 15px;
+        width: 195px;
+        margin-top: -1px;
+    }
+    .sidenav a {
+        font-size: 16px;
+    }
+    .name {
+        margin-left: -16px;
+    }
+    li {
+        float: right;
+        font-size: 14px;
+        margin-right: -37px;
+    }
+    .sidenav .closebtn {
+        font-size: 24px;
+    }
+    .fa-bars {
+        margin-left: 5px;
+    }
+    #homeSearchBg {
+        margin-top: 44px;
+        height: 300px;
+    }
+    .cardFirst,
+    .cardTwo,
+    .cardThree,
+    .cardFour,
+    .cardFive,
+    .cardSix,
+    .cardSeven,
+    .cardEight {
+        max-width: calc(100% - 1em);
+    }
+    .cardContainer {
+        margin-top: 355px;
+    }
+    .btn {
+        width: 70px;
+    }
+    select {
+        width: 70px;
+    }
+    div input[type=text] {
+        width: 120px;
+        font-size: 12px;
+    }
+    div .row {
+        margin-top: 15px;
+        margin-left: 5px;
+        width: 100%;
+    }
+    .searchbr {
+        padding-left: 69px;
+    }
+}
